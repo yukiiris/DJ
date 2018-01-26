@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectOfTerminal : MonoBehaviour {
+public class ShowingSp : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,5 +13,4 @@ public class ObjectOfTerminal : MonoBehaviour {
 	void Update () {
 		
 	}
-
 }
