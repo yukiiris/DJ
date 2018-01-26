@@ -11,6 +11,7 @@ public class PageFilperP : MonoBehaviour
 	public string[] contents;
 	public PageFilperN p;
 	int index;
+	public AudioSource pageFlip;
 
 	// Use this for initialization
 	void Start()
@@ -32,6 +33,7 @@ public class PageFilperP : MonoBehaviour
 			p.index--;
 			title.text = titles[index - 1];
 			content.text = contents[index - 1];
+			pageFlip.Play();
 		}
 	}
 }
