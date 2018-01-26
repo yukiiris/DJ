@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class ObjectOfTerminal : MonoBehaviour {
-	public GameObject g;
-	public GameObject cover;
+public class StartButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +17,6 @@ public class ObjectOfTerminal : MonoBehaviour {
 
 	private void OnMouseDown()
 	{
-		g.SetActive(true);
-		cover.SetActive(true);
+		SceneManager.LoadScene("01");
 	}
 }
