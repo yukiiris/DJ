@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectOfTerminal : MonoBehaviour {
+public class Cross : MonoBehaviour {
 	public GameObject[] g;
-
 	// Use this for initialization
 	void Start () {
 		
@@ -19,7 +18,7 @@ public class ObjectOfTerminal : MonoBehaviour {
 	{
 		foreach (GameObject gg in g)
 		{
-			gg.SetActive(true);
+			gg.SetActive(false);
 		}
 	}
 }
