@@ -370,7 +370,7 @@ Animation:
   m_GameObject: {fileID: 239526856}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 0}
+  m_Animation: {fileID: 7400000, guid: 1d87f4af88fcbc740bdb0330652a6f5d, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 1d87f4af88fcbc740bdb0330652a6f5d, type: 2}
   m_WrapMode: 0
@@ -410,7 +410,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 8dd7375b5daf2594daa565cd98d67ec0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
@@ -666,7 +666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &386956267
 Transform:
   m_ObjectHideFlags: 0
@@ -1084,6 +1084,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -2047,7 +2048,7 @@ SpriteRenderer:
   m_SortingLayerID: 381322393
   m_SortingLayer: 1
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 9ea316162106a124abcdc3b5a84a74c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f73696cee827f394489631b429e66248, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.259}
   m_FlipX: 0
   m_FlipY: 0
@@ -2055,7 +2056,7 @@ SpriteRenderer:
   m_Size: {x: 0.01, y: 0.01}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!1 &1744893872
 GameObject:
@@ -2296,7 +2297,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1931113731
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2518,7 +2519,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2102346012
 Transform:
   m_ObjectHideFlags: 0
