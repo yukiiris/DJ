@@ -13,6 +13,7 @@ public class Drag : MonoBehaviour
 
 	void OnMouseDrag()
 	{
+
 		Vector3 vector = Camera.main.ScreenToWorldPoint(mousePos);
 		transform.position = new Vector3(vector.x, vector.y, transform.position.z);
 	}
