@@ -41,9 +41,8 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: OperatingPage
-    uniqueID: 336856723
-    locked: 0
-  - name: ShowingPage
-    uniqueID: 736200015
+
+  - name: show
+    uniqueID: 381322393
+
     locked: 0
