@@ -603,7 +603,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &366810179
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1074,6 +1074,115 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &875540451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 875540453}
+  - component: {fileID: 875540452}
+  m_Layer: 0
+  m_Name: page flip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &875540452
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 875540451}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ba723464765b93f4db6eb0d4ec80617f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &875540453
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 875540451}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &911531947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,6 +1494,7 @@ MonoBehaviour:
   - "\u5728\u540E\u671F\u672C\u56FD\u516C\u6C11\u7684\u8BC1\u4EF6\u4E2D\u6709\u4E00\u4E2AA\u5F00\u5934\u7684\u5730\u533A\u8EAB\u4EFD\u8BC1\u8FD9\u4E2A\u662F\u8981\u56DE\u6536\u7684
     \u56DE\u6536\u5C31\u597D\u4E86 \u5426\u5219\u7B97\u9519\u8BEF "
   p: {fileID: 1744893874}
+  pageFlip: {fileID: 875540452}
 --- !u!65 &1265772178
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1430,7 +1540,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 381322393
   m_SortingLayer: 1
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f73696cee827f394489631b429e66248, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1790,6 +1900,7 @@ MonoBehaviour:
   - "\u5728\u540E\u671F\u672C\u56FD\u516C\u6C11\u7684\u8BC1\u4EF6\u4E2D\u6709\u4E00\u4E2AA\u5F00\u5934\u7684\u5730\u533A\u8EAB\u4EFD\u8BC1\u8FD9\u4E2A\u662F\u8981\u56DE\u6536\u7684
     \u56DE\u6536\u5C31\u597D\u4E86 \u5426\u5219\u7B97\u9519\u8BEF "
   p: {fileID: 1886795566}
+  pageFlip: {fileID: 0}
 --- !u!212 &1534677193
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1974,6 +2085,7 @@ MonoBehaviour:
   - "\u5728\u540E\u671F\u672C\u56FD\u516C\u6C11\u7684\u8BC1\u4EF6\u4E2D\u6709\u4E00\u4E2AA\u5F00\u5934\u7684\u5730\u533A\u8EAB\u4EFD\u8BC1\u8FD9\u4E2A\u662F\u8981\u56DE\u6536\u7684
     \u56DE\u6536\u5C31\u597D\u4E86 \u5426\u5219\u7B97\u9519\u8BEF "
   index: 1
+  pageFlip: {fileID: 875540452}
 --- !u!65 &1744893875
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2019,7 +2131,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 381322393
   m_SortingLayer: 1
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f73696cee827f394489631b429e66248, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2085,6 +2197,7 @@ MonoBehaviour:
   - "\u5728\u540E\u671F\u672C\u56FD\u516C\u6C11\u7684\u8BC1\u4EF6\u4E2D\u6709\u4E00\u4E2AA\u5F00\u5934\u7684\u5730\u533A\u8EAB\u4EFD\u8BC1\u8FD9\u4E2A\u662F\u8981\u56DE\u6536\u7684
     \u56DE\u6536\u5C31\u597D\u4E86 \u5426\u5219\u7B97\u9519\u8BEF "
   index: 1
+  pageFlip: {fileID: 0}
 --- !u!212 &1886795567
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2156,7 +2269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1931113731
 SpriteRenderer:
   m_ObjectHideFlags: 0
