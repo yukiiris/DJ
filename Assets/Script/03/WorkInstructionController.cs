@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//[AddComponentMenu]
-public class TerminalController : MonoBehaviour {
+public class WorkInstructionController : MonoBehaviour {
 
     private void OnMouseUp()
     {
-        StaticValue.currentChoosingPage = StaticValue.ChoosingState.terminal;
+        StaticValue.currentChoosingPage = StaticValue.ChoosingState.workInstruction;
         StaticValue.hasShowing = false;
     }
 }

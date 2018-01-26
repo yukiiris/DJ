@@ -23,5 +23,6 @@ public class StaticValue : MonoBehaviour {
 
     public static int MoneyEarningToday;
     public static int MoneySum;
+    public static bool hasShowing=true;
 
 }
