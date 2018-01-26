@@ -17,7 +17,10 @@ public class Tmer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (time == 0)
+		{
+
+		}
 	}
 
 	IEnumerator f()
