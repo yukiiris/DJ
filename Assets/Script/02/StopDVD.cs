@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class StopDVD : MonoBehaviour {
-	public GameObject[] g;
+	public Manager manager;
 	// Use this for initialization
 	void Start () {
 		
@@ -21,9 +21,6 @@ public class StopDVD : MonoBehaviour {
 			return;
 		}
 		DVDPlayer.c.GetComponent<Disk>().music.Stop();
-		foreach (GameObject gg in g)
-		{
-			gg.SetActive(false);
-		}
+		manager.finishDVD();
 	}
 }

@@ -17,7 +17,6 @@ public class Avatar : MonoBehaviour {
 
 	private void OnMouseDown()
 	{
-		print(111);
 		if (gg != null)
 			gg.SetActive(false);
 		g.SetActive(true);

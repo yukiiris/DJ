@@ -40,5 +40,11 @@ public class Broadcast : MonoBehaviour {
 			
 			yield return new WaitForSeconds(0.5f);
 		}
+		text2.text = words.Substring(0, i - 2);
+		yield return new WaitForSeconds(0.5f);
+		text2.text = words.Substring(0, i - 1);
+		yield return new WaitForSeconds(0.5f);
+		text2.text = words.Substring(0, i);
+		yield return new WaitForSeconds(0.5f);
 	}
 }

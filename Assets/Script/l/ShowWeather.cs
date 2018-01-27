@@ -7,6 +7,7 @@ public class ShowWeather : MonoBehaviour {
 	private ChooseManager cm;
 	public GameObject[] choice;
 	public GameObject[] weather;
+	public Waiter waiter;
 	// Use this for initialization
 	void Start () {
 		cm = manager.GetComponent<ChooseManager>();
@@ -22,6 +23,7 @@ public class ShowWeather : MonoBehaviour {
 		while(i < choice.Length&&cm.choice!=choice[i]) {
 				i++;
 		}
+		waiter.isClicked = true;
 		weather [i].SetActive (true);
 	}
 }
