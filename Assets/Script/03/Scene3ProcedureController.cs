@@ -10,22 +10,30 @@ public class Scene3ProcedureController : MonoBehaviour
 
     [SerializeField] private GameObject targetTermimal;
     [SerializeField] private GameObject targetWorkInstruction;
+    [SerializeField] private GameObject targetMagazineSubscribe;
 
     private Vector3 createPosition = new Vector3(0, 0, 0);
     private void FixedUpdate()
     {
         //该产生的展示板并没有展开
-        if (!StaticValue.hasShowing)
+        if (!StaticValue.hasShowing&&!StaticValue.isShowing)
         {
             switch (StaticValue.currentChoosingPage)
             {
                 case StaticValue.ChoosingState.terminal:
                     Instantiate(targetTermimal, createPosition, Quaternion.Euler(0, 0, 0));
                     StaticValue.hasShowing = true;
+                    StaticValue.isShowing = true;
                     break;
                 case StaticValue.ChoosingState.workInstruction:
                     Instantiate(targetWorkInstruction, createPosition, Quaternion.Euler(0, 0, 0));
                     StaticValue.hasShowing = true;
+                    StaticValue.isShowing = true;
+                    break;
+                case StaticValue.ChoosingState.MagazineSubscribe:
+                    Instantiate(targetMagazineSubscribe, createPosition, Quaternion.Euler(0, 0, 0));
+                    StaticValue.hasShowing = true;
+                    StaticValue.isShowing = true;
                     break;
                 default:
                     break;
