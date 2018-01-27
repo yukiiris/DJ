@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeScene : MonoBehaviour {
-
-	public string scene;
-	public GameObject[] gameObjects;
+public class SceneChanger : MonoBehaviour {
+	public string toLoad;
 	// Use this for initialization
 	void Start () {
 		
@@ -19,10 +17,6 @@ public class ChangeScene : MonoBehaviour {
 
 	private void OnMouseDown()
 	{
-		foreach (GameObject g in gameObjects)
-		{
-			g.SetActive(false);
-		}
-		SceneChanger.Change("01", "02");
+		SceneManager.LoadSceneAsync(toLoad);
 	}
 }
