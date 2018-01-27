@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChooseCal : MonoBehaviour {
+public class ShowWeather : MonoBehaviour {
 	public GameObject manager;
 	private ChooseManager cm;
-	public GameObject rightChoice;
-	public GameObject thispage;
+	public GameObject[] choice;
+	public GameObject[] weather;
 	// Use this for initialization
 	void Start () {
 		cm = manager.GetComponent<ChooseManager>();
@@ -17,20 +17,11 @@ public class ChooseCal : MonoBehaviour {
 		
 	}
 
-
 	void OnMouseDown(){
-		if (ifChooseRight()==0) {
-			print (1);
-		} else {
-			print (2);
+		int i = 0;
+		while(i < choice.Length&&cm.choice!=choice[i]) {
+				i++;
 		}
-		thispage.SetActive (false);
-	}
-
-	int ifChooseRight(){
-		if (cm.choice == rightChoice) {
-			return(0);
-		} else
-			return(1);
+		weather [i].SetActive (true);
 	}
 }
