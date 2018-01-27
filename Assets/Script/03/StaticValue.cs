@@ -9,6 +9,7 @@ public class StaticValue : MonoBehaviour {
     {
         terminal,
         workInstruction,
+        MagazineSubscribe,
         scene_3_mainPage
     }
 
@@ -24,5 +25,5 @@ public class StaticValue : MonoBehaviour {
     public static int MoneyEarningToday;
     public static int MoneySum;
     public static bool hasShowing=true;
-
+    public static bool isShowing = false;
 }
