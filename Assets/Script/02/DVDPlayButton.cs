@@ -16,7 +16,6 @@ public class DVDPlayButton : MonoBehaviour {
 
 	private void OnMouseDown()
 	{
-		print(111);
 		player.play();
 	}
 }
