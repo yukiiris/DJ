@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DVDPlayButton : MonoBehaviour {
-
+	public DVDPlayer player;
 	// Use this for initialization
 	void Start () {
 		
@@ -16,6 +16,7 @@ public class DVDPlayButton : MonoBehaviour {
 
 	private void OnMouseDown()
 	{
-		
+		print(111);
+		player.play();
 	}
 }

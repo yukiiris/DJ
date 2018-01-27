@@ -9,6 +9,7 @@ public class PageFilperP : MonoBehaviour
 	public Text content;
 	public string[] titles;
 	public string[] contents;
+	public Database database;
 	public PageFilperN p;
 	int index;
 	public AudioSource pageFlip;

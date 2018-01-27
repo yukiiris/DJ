@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class DVDPlayer : MonoBehaviour {
 	public Text title;
 	public Text content;
+	public static bool isFull = false;
+	public static Collider c;
 	// Use this for initialization
 	void Start () {
 		
@@ -18,6 +20,10 @@ public class DVDPlayer : MonoBehaviour {
 
 	private void OnTriggerStay(Collider other)
 	{
+		if (isFull)
+		{
+			return;
+		}
 		other.transform.gameObject.GetComponent<Disk>().isUsed = true;
 		if (!other.transform.gameObject.GetComponent<Disk>().isClicked)
 		{
@@ -25,10 +31,20 @@ public class DVDPlayer : MonoBehaviour {
 			title.text = other.transform.GetComponent<Disk>().title;
 			content.text = other.transform.GetComponent<Disk>().info;
 		}
+		c = other;
 	}
 
 	private void OnTriggerExit(Collider other)
 	{
 		other.transform.gameObject.GetComponent<Disk>().isUsed = false;
+	}
+
+	public void play()
+	{
+		if (c == null)
+		{
+			return;
+		}
+		c.GetComponent<Disk>().music.Play();
 	}
 }
