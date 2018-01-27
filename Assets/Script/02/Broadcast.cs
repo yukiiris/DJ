@@ -28,7 +28,7 @@ public class Broadcast : MonoBehaviour {
 		for (i = 0; i < words.Length; i++)
 		{
 			t += " ";
-			text.text = words.Substring(0, i);
+			text.text = words.Substring(0, i + 1);
 			if (i > 3)
 			{
 				text2.text = words.Substring(0, i - 3);
@@ -37,6 +37,7 @@ public class Broadcast : MonoBehaviour {
 			{
 				//text3.text = t + words.Substring(SilenceButton.start, SilenceButton.end);
 			}
+			
 			yield return new WaitForSeconds(0.5f);
 		}
 	}
