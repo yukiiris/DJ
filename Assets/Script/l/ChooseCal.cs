@@ -19,7 +19,14 @@ public class ChooseCal : MonoBehaviour {
 
 
 	void OnMouseDown(){
-		thispage.SetActive (false);
+		if (cm.choice != null) {
+			if (ifChooseRight () == 0) {
+				print (1);
+			} else {
+				print (2);
+			}
+			thispage.SetActive (false);
+		}
 	}
 
 	int ifChooseRight(){
