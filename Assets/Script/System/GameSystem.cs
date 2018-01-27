@@ -13,6 +13,7 @@ public class GameSystem : MonoBehaviour {
     }
 
     [HideInInspector] public static bool isGameOver = false;
+    [HideInInspector] private static bool hasHelpInnovationParty=false;
 
     private static EndingType m_endingType = EndingType.noLuckyPoint;
 
@@ -23,5 +24,11 @@ public class GameSystem : MonoBehaviour {
             UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync("Scene 3");
             UnityEngine.SceneManagement.SceneManager.LoadScene("EndingScene");
         }
+    }
+
+    public static void IHelpInnovationParty()
+    {
+        hasHelpInnovationParty = true;
+
     }
 }
