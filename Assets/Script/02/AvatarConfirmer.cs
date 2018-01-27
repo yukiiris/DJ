@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AvatarConfirmer : MonoBehaviour {
-	public GameObject g;
-	public GameObject gg;
 	public Manager manager;
 	// Use this for initialization
 	void Start () {
@@ -18,8 +16,7 @@ public class AvatarConfirmer : MonoBehaviour {
 
 	private void OnMouseDown()
 	{
-		manager.startParty();
-		g.SetActive(false);
-		gg.SetActive(false);
+		Time.hour++;
+		manager.check();
 	}
 }

@@ -1183,7 +1183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &154022494
 Transform:
   m_ObjectHideFlags: 0
@@ -2171,7 +2171,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &452840128
 Transform:
   m_ObjectHideFlags: 0
@@ -2348,7 +2348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &463454310
 Transform:
   m_ObjectHideFlags: 0
@@ -2650,7 +2650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &519787812
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2748,13 +2748,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e5488adb4c85a341984170d66e8c0dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  introduction: {fileID: 452840127}
+  introductionT: {fileID: 1590468349}
   DVD: {fileID: 519787811}
   playButton: {fileID: 154022493}
   DVDPlayer: {fileID: 463454309}
+  DVDStop: {fileID: 957513109}
   party: {fileID: 1685019404}
-  broadcast: {fileID: 0}
-  broadcastT: {fileID: 0}
-  weather: {fileID: 0}
+  broadcast: {fileID: 1961059962}
+  broadcastT: {fileID: 150904349}
+  weather: {fileID: 1117213658}
+  tmer: {fileID: 1300264643}
+  text: {fileID: 1248456459}
 --- !u!1 &526971722
 GameObject:
   m_ObjectHideFlags: 0
@@ -5111,9 +5116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dd51df0925804c4280f324a3f471fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g: {fileID: 452840127}
-  gg: {fileID: 1590468349}
-  manager: {fileID: 0}
+  manager: {fileID: 524818184}
 --- !u!65 &892949525
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5135,6 +5138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 905419635}
   - component: {fileID: 905419638}
+  - component: {fileID: 905419636}
   - component: {fileID: 905419637}
   m_Layer: 0
   m_Name: Finish Button
@@ -5156,6 +5160,18 @@ Transform:
   m_Father: {fileID: 1961059964}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &905419636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 905419634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a9cbd61acde54348bad9b5ad0087300, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 524818184}
 --- !u!65 &905419637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5166,8 +5182,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.01, y: 0.01, z: 0.2}
-  m_Center: {x: 0, y: 0.0000000018626451, z: 0}
+  m_Size: {x: 1.8, y: 0.7, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &905419638
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5457,7 +5473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &957513110
 Transform:
   m_ObjectHideFlags: 0
@@ -5482,7 +5498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f8dd15bedad704291fc94674890bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 524818184}
 --- !u!65 &957513112
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6412,7 +6428,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1117213659
 Transform:
   m_ObjectHideFlags: 0
@@ -9599,7 +9615,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1590468350
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10329,7 +10345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isClicked: 0
-  manager: {fileID: 524818182}
+  manager: {fileID: 524818184}
 --- !u!1 &1690105715
 GameObject:
   m_ObjectHideFlags: 0
