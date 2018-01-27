@@ -19,7 +19,6 @@ public class Keyword : MonoBehaviour {
 
 	private void OnMouseDown()
 	{
-		print(111);
 		if (now != null)
 		{
 			now.color = color;
