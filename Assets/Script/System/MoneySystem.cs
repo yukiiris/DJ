@@ -34,7 +34,7 @@ public class MoneySystem : MonoBehaviour
             targetChangingMoney.text = "今日亏了:" + Mathf.Abs(changeMoneyValue);
             isMoneyChanging = true;
         }
-        targetMoneySum.text = "总幸运点:" + moneySum;
+        targetMoneySum.text = "总信誉点:" + moneySum;
     }
 
     private void Update()
