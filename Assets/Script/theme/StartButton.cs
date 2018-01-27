@@ -17,6 +17,6 @@ public class StartButton : MonoBehaviour {
 
 	private void OnMouseDown()
 	{
-		SceneManager.LoadScene("01");
+		SceneManager.LoadScene("start");
 	}
 }
