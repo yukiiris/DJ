@@ -7,7 +7,7 @@ public class ChangePageButton : MonoBehaviour {
 	public int i = 1;
 	// Use this for initialization
 	void Start () {
-		con = transform.GetComponentInParent<ChangePagesCon> ();
+		con = transform.parent.GetComponentInParent<ChangePagesCon> ();
 	}
 	
 	// Update is called once per frame
