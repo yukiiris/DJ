@@ -11,12 +11,19 @@ public class Scene3ProcedureController : MonoBehaviour
     [SerializeField] private GameObject targetTermimal;
     [SerializeField] private GameObject targetWorkInstruction;
     [SerializeField] private GameObject targetMagazineSubscribe;
+    public UnityEngine.UI.Text targetTotalMoneySum;
+    public UnityEngine.UI.Text targetChangingMoney;
+
+    private string totalMoneyBefore = "总幸运点:";
+    private string earningNumber = "今日挣了:";
+    private string losingNumber = "今日亏了:";
+
 
     private Vector3 createPosition = new Vector3(0, 0, 0);
     private void FixedUpdate()
     {
         //该产生的展示板并没有展开
-        if (!StaticValue.hasShowing&&!StaticValue.isShowing)
+        if (!StaticValue.hasShowing && !StaticValue.isShowing)
         {
             switch (StaticValue.currentChoosingPage)
             {
@@ -39,7 +46,12 @@ public class Scene3ProcedureController : MonoBehaviour
                     break;
             }
         }
-        
 
     }
+
+    public void ChangingUIMoney(int changingMoney)
+    {
+        
+    }
+
 }
