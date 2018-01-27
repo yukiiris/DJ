@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Avatar : MonoBehaviour {
-	public GameObject g;
+public class ChooseManager : MonoBehaviour {
+	public GameObject choice;
 	// Use this for initialization
 	void Start () {
 		
@@ -12,10 +12,5 @@ public class Avatar : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-	}
-
-	private void OnMouseDown()
-	{
-		g.SetActive(true);
 	}
 }
