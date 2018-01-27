@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class DVDPlayer : MonoBehaviour {
 	public Text title;
+	public Text content;
 	// Use this for initialization
 	void Start () {
 		
@@ -22,7 +23,7 @@ public class DVDPlayer : MonoBehaviour {
 		{
 			other.transform.position = new Vector3(10, 10, 0);
 			title.text = other.transform.GetComponent<Disk>().title;
-
+			content.text = other.transform.GetComponent<Disk>().info;
 		}
 	}
 
