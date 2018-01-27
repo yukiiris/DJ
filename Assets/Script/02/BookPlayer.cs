@@ -83,13 +83,16 @@ public class BookPlayer : MonoBehaviour
     #endregion
     private void OnTriggerStay(Collider other)
     {
-        other.transform.gameObject.GetComponent<Book>().isUsed = true;
-        if (!other.transform.gameObject.GetComponent<Book>().isClicked)
+        if (other.transform.gameObject.GetComponent<Book>())
         {
-            other.transform.position = new Vector3(10, 10, 0);
-            title.text = other.transform.GetComponent<Book>().title;
-            content.text = other.transform.GetComponent<Book>().info;
+            other.transform.gameObject.GetComponent<Book>().isUsed = true;
+            if (!other.transform.gameObject.GetComponent<Book>().isClicked)
+            {
+                other.transform.position = new Vector3(10, 10, 0);
+                title.text = other.GetComponent<Book>().title;
+            }
         }
+        
     }
 
     private void OnTriggerExit(Collider other)

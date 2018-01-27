@@ -23,7 +23,7 @@ public class ShowWeather : MonoBehaviour {
 		while(i < choice.Length&&cm.choice!=choice[i]) {
 				i++;
 		}
-		waiter.isClicked = true;
+		//waiter.isClicked = true;
 		weather [i].SetActive (true);
 	}
 }
