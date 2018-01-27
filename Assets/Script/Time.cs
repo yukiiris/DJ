@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FinishButton : MonoBehaviour {
+public class Time : MonoBehaviour {
 
-	public Manager manager;
+	public static int day = 1;
+	public static int hour = 1;
 	// Use this for initialization
 	void Start () {
 		
@@ -13,11 +14,5 @@ public class FinishButton : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-	}
-
-	private void OnMouseDown()
-	{
-		Time.hour++;
-		manager.check();
 	}
 }

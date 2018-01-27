@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Waiter : MonoBehaviour {
 	public bool isClicked = false;
-	public GameObject manager;
+	public Manager manager;
 	
 	// Use this for initialization
 	void Start () {
@@ -28,7 +28,7 @@ public class Waiter : MonoBehaviour {
 			yield return new WaitForSeconds(1f);
 			i++;
 		}
-		manager.GetComponent<Manager>().finishParty();
-		manager.GetComponent<Manager>().startDVD();
+		Time.hour++;
+		manager.check();
 	}
 }

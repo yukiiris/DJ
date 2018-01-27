@@ -21,6 +21,7 @@ public class StopDVD : MonoBehaviour {
 			return;
 		}
 		DVDPlayer.c.GetComponent<Disk>().music.Stop();
-		manager.finishDVD();
+		Time.hour++;
+		manager.check();
 	}
 }

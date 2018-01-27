@@ -19,6 +19,7 @@ public class ChooseCal : MonoBehaviour {
 
 
 	void OnMouseDown(){
+
 		if (cm.choice != null) {
 			if (ifChooseRight () == 0) {
 				print (1);
@@ -27,6 +28,7 @@ public class ChooseCal : MonoBehaviour {
 			}
 			thispage.SetActive (false);
 		}
+
 	}
 
 	int ifChooseRight(){
