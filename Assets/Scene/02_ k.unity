@@ -2099,6 +2099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed7d2ade02994348ad6bd43966c470a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetMask: {fileID: 0}
   title: 
   info: 
   isClicked: 0
@@ -4360,6 +4361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed7d2ade02994348ad6bd43966c470a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetMask: {fileID: 0}
   title: 
   info: 
   isClicked: 0
@@ -4637,6 +4639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed7d2ade02994348ad6bd43966c470a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetMask: {fileID: 0}
   title: 
   info: 
   isClicked: 0
@@ -6974,6 +6977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed7d2ade02994348ad6bd43966c470a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetMask: {fileID: 0}
   title: 
   info: 
   isClicked: 0
@@ -7199,6 +7203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed7d2ade02994348ad6bd43966c470a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetMask: {fileID: 0}
   title: 
   info: 
   isClicked: 0
@@ -7399,15 +7404,17 @@ RectTransform:
   m_GameObject: {fileID: 1248456457}
   m_LocalRotation: {x: -0, y: -0, z: -0.05207713, w: 0.9986431}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 1}
   m_Children: []
   m_Father: {fileID: 193170729}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.9700003}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.437, y: 4.572}
-  m_SizeDelta: {x: 90.692, y: 22.282}
+
+  m_AnchoredPosition: {x: 1.69, y: 4.49}
+  m_SizeDelta: {x: 160, y: 30}
+
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1248456459
 MonoBehaviour:
@@ -8499,6 +8506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed7d2ade02994348ad6bd43966c470a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetMask: {fileID: 0}
   title: 
   info: 
   isClicked: 0
@@ -9914,6 +9922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed7d2ade02994348ad6bd43966c470a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetMask: {fileID: 0}
   title: 
   info: 
   isClicked: 0
@@ -10307,6 +10316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed7d2ade02994348ad6bd43966c470a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetMask: {fileID: 0}
   title: 
   info: 
   isClicked: 0
@@ -12931,14 +12941,14 @@ RectTransform:
   m_GameObject: {fileID: 2130658773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 1}
   m_Children: []
   m_Father: {fileID: 193170729}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.16, y: 4.47}
+  m_AnchoredPosition: {x: -3.87, y: 4.53}
   m_SizeDelta: {x: 76.1, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2145333907
