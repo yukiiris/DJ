@@ -5,14 +5,11 @@ using UnityEngine.UI;
 [AddComponentMenu("book/creatBookMask")]
 public class CreatBookMask : MonoBehaviour {
 
-    [SerializeField] private GameObject bookMask_g;
-    [SerializeField] private string toChange;
+    [SerializeField] public GameObject bookMask_g;
     private void OnMouseUp()
     {
-        Debug.Log("tffff");
-        Vector3 vector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        GameObject g=Instantiate(bookMask_g,gameObject.transform.position,Quaternion.identity);
-        g.transform.parent = gameObject.transform;
+		transform.GetChild (0).gameObject.SetActive (true);
+		bookMask_g.SetActive (true);
         //GetComponent<Text>().text = toChange;
     }
 }
