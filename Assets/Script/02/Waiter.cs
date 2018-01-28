@@ -30,6 +30,6 @@ public class Waiter : MonoBehaviour {
 			i++;
 		}
 		Time.hour++;
-		manager.check();
+		StartCoroutine(manager.check());
 	}
 }

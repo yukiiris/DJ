@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class AvatarConfirmer : MonoBehaviour {
-	public Manager manager;
+public class showcredit : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,12 +12,6 @@ public class AvatarConfirmer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
-
-	private void OnMouseDown()
-	{
-		Time.hour++;
-		StartCoroutine(manager.check());
+		GetComponent<Text> ().text = "" + Credit.credit;
 	}
 }

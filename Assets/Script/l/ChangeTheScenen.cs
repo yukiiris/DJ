@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AvatarConfirmer : MonoBehaviour {
-	public Manager manager;
+public class ChangeTheScenen : MonoBehaviour {
+	public GameObject now;
+	public GameObject next;
 	// Use this for initialization
 	void Start () {
 		
@@ -14,9 +15,8 @@ public class AvatarConfirmer : MonoBehaviour {
 		
 	}
 
-	private void OnMouseDown()
-	{
-		Time.hour++;
-		StartCoroutine(manager.check());
+	void OnMouseDown(){
+		next.SetActive (true);
+		now.SetActive (false);
 	}
 }

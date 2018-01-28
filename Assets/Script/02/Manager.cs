@@ -18,6 +18,7 @@ public class Manager : MonoBehaviour {
 	public GameObject broadcastT;
 	public GameObject weather;
 	public GameObject news;
+	public GameObject transition;
 	public Tmer tmer;
 	public Text text;
 
@@ -72,7 +73,7 @@ public class Manager : MonoBehaviour {
 	public void finishBook()
 	{
 		reader.SetActive(false);
-
+		print (22);
 	}
 
 	public void startDVD()
@@ -113,25 +114,34 @@ public class Manager : MonoBehaviour {
 		weather.SetActive(false);
 	}
 
-	public void check()
+	public IEnumerator check()
 	{
 		if (Time.hour == 2)
 		{
 			finishIntroduction();
+			transition.SetActive (true);
+			//yield return new WaitForSeconds (0.1f);
+			transition.SetActive (false);
 			tmer.time = 180;
 			text.text = "政党风向";
-			startNews();
+			startParty ();
 		}
 		else if (Time.hour == 3)
 		{
-			finishNews();
+			finishParty();
+			transition.SetActive (true);
+			//yield return new WaitForSeconds (2f);
+			transition.SetActive (false);
 			tmer.time = 180;
 			text.text = "每日新闻";
-			startParty();
+			startNews();
 		}
 		else if (Time.hour == 4)
 		{
-			finishParty();
+			finishNews();
+			transition.SetActive (true);
+			//yield return new WaitForSeconds (2f);
+			transition.SetActive (false);
 			tmer.time = 180;
 			text.text = "音乐之声";
 			startDVD();
@@ -140,6 +150,9 @@ public class Manager : MonoBehaviour {
 		else if (Time.hour == 5)
 		{
 			finishDVD();
+			transition.SetActive (true);
+			//yield return new WaitForSeconds (2f);
+			transition.SetActive (false);
 			tmer.time = 180;
 			text.text = "鉴书专栏";
 			startBook();
@@ -148,6 +161,10 @@ public class Manager : MonoBehaviour {
 		else if (Time.hour == 6)
 		{
 			finishBook();
+			print (111);
+			//transition.SetActive (true);
+			//yield return new WaitForSeconds (2f);
+			//transition.SetActive (false);
 			tmer.time = 180;
 			text.text = "心灵之约";
 			startBroadcast();
@@ -155,6 +172,9 @@ public class Manager : MonoBehaviour {
 		else if (Time.hour == 7)
 		{
 			finishBroadcast();
+			transition.SetActive (true);
+			//yield return new WaitForSeconds (2f);
+			transition.SetActive (false);
 			tmer.time = 180;
 			text.text = "天气预报";
 			startWeather();
@@ -164,5 +184,6 @@ public class Manager : MonoBehaviour {
 			finishWeather();
 			SceneManager.LoadScene("03");
 		}
+		yield return 0;
 	}
 }

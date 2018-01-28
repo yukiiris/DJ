@@ -2,21 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AvatarConfirmer : MonoBehaviour {
-	public Manager manager;
+public class RightHead : MonoBehaviour {
+	private ResultCal rc;
+	public GameObject right;
 	// Use this for initialization
 	void Start () {
-		
+		rc = GetComponent<ResultCal> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
-
-	private void OnMouseDown()
-	{
-		Time.hour++;
-		StartCoroutine(manager.check());
+		if (right.activeInHierarchy)
+			rc.num = 2;
+		else
+			rc.num = -1;
 	}
 }
