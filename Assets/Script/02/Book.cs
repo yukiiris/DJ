@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Book : MonoBehaviour {
 
-    public string title;
+	public GameObject book;
     [Multiline(10)] public string info;
     [HideInInspector] public bool isClicked = false;
 	[HideInInspector] public bool isUsed = false;
