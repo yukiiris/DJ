@@ -11,10 +11,13 @@ public class Manager : MonoBehaviour {
 	public GameObject playButton;
 	public GameObject DVDPlayer;
 	public GameObject DVDStop;
+	public GameObject book;
+	public GameObject reader;
 	public GameObject party;
 	public GameObject broadcast;
 	public GameObject broadcastT;
 	public GameObject weather;
+	public GameObject news;
 	public Tmer tmer;
 	public Text text;
 
@@ -48,6 +51,29 @@ public class Manager : MonoBehaviour {
 	public void finishParty()
 	{
 		party.SetActive(false);
+	}
+
+	public void startNews()
+	{
+		news.SetActive(true);
+		news.transform.GetChild(Time.day - 1).gameObject.SetActive(true);
+	}
+
+	public void finishNews()
+	{
+		news.SetActive(false);
+		news.transform.GetChild(Time.day - 1).gameObject.SetActive(false);
+	}
+
+	public void startBook()
+	{
+		book.SetActive(true);
+		reader.SetActive(true);
+	}
+	public void finishBook()
+	{
+		book.SetActive(false);
+		reader.SetActive(false);
 	}
 
 	public void startDVD()
@@ -95,30 +121,46 @@ public class Manager : MonoBehaviour {
 			finishIntroduction();
 			tmer.time = 180;
 			text.text = "政党风向";
-			startParty();
+			startNews();
 		}
 		else if (Time.hour == 3)
+		{
+			finishNews();
+			tmer.time = 180;
+			text.text = "每日新闻";
+			startParty();
+		}
+		else if (Time.hour == 4)
 		{
 			finishParty();
 			tmer.time = 180;
 			text.text = "音乐之声";
 			startDVD();
+
 		}
-		else if (Time.hour == 4)
+		else if (Time.hour == 5)
 		{
 			finishDVD();
+			tmer.time = 180;
+			text.text = "鉴书专栏";
+			startBook();
+
+		}
+		else if (Time.hour == 6)
+		{
+			finishBook();
 			tmer.time = 180;
 			text.text = "心灵之约";
 			startBroadcast();
 		}
-		else if (Time.hour == 5)
+		else if (Time.hour == 7)
 		{
 			finishBroadcast();
 			tmer.time = 180;
 			text.text = "天气预报";
 			startWeather();
 		}
-		else if (Time.hour == 6)
+		else if (Time.hour == 8)
 		{
 			finishWeather();
 		}
