@@ -5,6 +5,7 @@ using UnityEngine;
 public class Waiter : MonoBehaviour {
 	public bool isClicked = false;
 	public Manager manager;
+	public int waitTime;
 	
 	// Use this for initialization
 	void Start () {
@@ -23,7 +24,7 @@ public class Waiter : MonoBehaviour {
 	IEnumerator f()
 	{
 		int i = 0;
-		while (i < 8)
+		while (i < waitTime)
 		{
 			yield return new WaitForSeconds(1f);
 			i++;

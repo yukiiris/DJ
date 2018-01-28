@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Manager : MonoBehaviour {
 
@@ -11,7 +12,6 @@ public class Manager : MonoBehaviour {
 	public GameObject playButton;
 	public GameObject DVDPlayer;
 	public GameObject DVDStop;
-	public GameObject book;
 	public GameObject reader;
 	public GameObject party;
 	public GameObject broadcast;
@@ -67,13 +67,12 @@ public class Manager : MonoBehaviour {
 
 	public void startBook()
 	{
-		book.SetActive(true);
 		reader.SetActive(true);
 	}
 	public void finishBook()
 	{
-		book.SetActive(false);
 		reader.SetActive(false);
+
 	}
 
 	public void startDVD()
@@ -163,6 +162,7 @@ public class Manager : MonoBehaviour {
 		else if (Time.hour == 8)
 		{
 			finishWeather();
+			SceneManager.LoadScene("03");
 		}
 	}
 }

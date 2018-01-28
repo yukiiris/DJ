@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class BookPlayer : MonoBehaviour
 {
 
-    public Text title;
-    public Text content;
+    public GameObject confirmT;
+    public GameObject confirm;
+	public GameObject c;
     public bool isReadingBook=false;
     #region  书的内容  一大串  
     private string book_1 =
@@ -83,16 +84,22 @@ public class BookPlayer : MonoBehaviour
     #endregion
     private void OnTriggerStay(Collider other)
     {
+		if (isReadingBook)
+			return;
         if (other.transform.gameObject.GetComponent<Book>())
         {
             other.transform.gameObject.GetComponent<Book>().isUsed = true;
             if (!other.transform.gameObject.GetComponent<Book>().isClicked)
             {
                 other.transform.position = new Vector3(10, 10, 0);
-                title.text = other.GetComponent<Book>().title;
-            }
+				other.transform.gameObject.GetComponent<Book>().book.SetActive(true);
+				isReadingBook = true;
+				confirm.SetActive(true);
+				confirmT.SetActive(true);
+				c = other.transform.gameObject.GetComponent<Book>().book;
+			}
         }
-        
+		
     }
 
     private void OnTriggerExit(Collider other)
