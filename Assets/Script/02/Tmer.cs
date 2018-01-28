@@ -10,6 +10,7 @@ public class Tmer : MonoBehaviour {
 	public int second1 = 10;
 	public int second2 = 10;
 	public int time = 180;
+	public Manager manager;
 	// Use this for initialization
 	void Start () {
 		StartCoroutine(f());
@@ -19,7 +20,8 @@ public class Tmer : MonoBehaviour {
 	void Update () {
 		if (time == 0)
 		{
-
+			Time.hour++;
+			manager.check ();
 		}
 	}
 

@@ -18,9 +18,9 @@ public class BookConfirmer : MonoBehaviour {
 	private void OnMouseDown()
 	{
 		Time.hour++;
+		StartCoroutine (manager.check ());
 		player.confirm.SetActive(false);
 		player.confirmT.SetActive(false);
 		player.c.SetActive(false);
-		manager.check();
 	}
 }
