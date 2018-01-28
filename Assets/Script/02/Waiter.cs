@@ -6,7 +6,7 @@ public class Waiter : MonoBehaviour {
 	public bool isClicked = false;
 	public Manager manager;
 	public int waitTime;
-	
+	public AudioSource music;
 	// Use this for initialization
 	void Start () {
 		
@@ -24,11 +24,13 @@ public class Waiter : MonoBehaviour {
 	IEnumerator f()
 	{
 		int i = 0;
+		music.Play();
 		while (i < waitTime)
 		{
 			yield return new WaitForSeconds(1f);
 			i++;
 		}
+		music.Stop();
 		Time.hour++;
 		StartCoroutine(manager.check());
 	}

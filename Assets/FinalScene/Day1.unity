@@ -5365,6 +5365,7 @@ MonoBehaviour:
   isClicked: 0
   manager: {fileID: 992682822}
   waitTime: 17
+  music: {fileID: 1802256978}
 --- !u!1 &212427682
 GameObject:
   m_ObjectHideFlags: 0
@@ -9624,6 +9625,7 @@ MonoBehaviour:
   isClicked: 0
   manager: {fileID: 992682822}
   waitTime: 15
+  music: {fileID: 0}
 --- !u!1 &367071499
 GameObject:
   m_ObjectHideFlags: 0
@@ -13669,7 +13671,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 507571694}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.47, y: -2.58, z: 0}
+  m_LocalPosition: {x: -0.36, y: -2.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 814497002}
@@ -14636,6 +14638,7 @@ MonoBehaviour:
   isClicked: 0
   manager: {fileID: 992682822}
   waitTime: 3
+  music: {fileID: 1612660301}
 --- !u!4 &557483876
 Transform:
   m_ObjectHideFlags: 0
@@ -22923,7 +22926,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 381322393
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: e293a7c4150d4bf4998c786ee9125929, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -29045,6 +29048,7 @@ MonoBehaviour:
   isClicked: 0
   manager: {fileID: 992682822}
   waitTime: 15
+  music: {fileID: 0}
 --- !u!1 &1101910725
 GameObject:
   m_ObjectHideFlags: 0
@@ -29702,6 +29706,7 @@ MonoBehaviour:
   isClicked: 0
   manager: {fileID: 992682822}
   waitTime: 15
+  music: {fileID: 0}
 --- !u!1 &1124355060
 GameObject:
   m_ObjectHideFlags: 0
@@ -33999,6 +34004,7 @@ MonoBehaviour:
   isClicked: 0
   manager: {fileID: 992682822}
   waitTime: 15
+  music: {fileID: 0}
 --- !u!1 &1313479932
 GameObject:
   m_ObjectHideFlags: 0
@@ -44735,7 +44741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ab6da7e75e97a4293ae7cd005c8f2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Disappearence
+  title: "\u4E16\u754C\u4E4B\u5B50"
   music: {fileID: 938013790}
   info: sdfsdfasd
   isClicked: 0
@@ -44891,6 +44897,7 @@ MonoBehaviour:
   isClicked: 0
   manager: {fileID: 992682822}
   waitTime: 15
+  music: {fileID: 0}
 --- !u!1 &1717320340
 GameObject:
   m_ObjectHideFlags: 0
@@ -45611,6 +45618,7 @@ MonoBehaviour:
   isClicked: 0
   manager: {fileID: 992682822}
   waitTime: 15
+  music: {fileID: 0}
 --- !u!1 &1731845301
 GameObject:
   m_ObjectHideFlags: 0
@@ -47994,6 +48002,115 @@ Transform:
   - {fileID: 746886227}
   m_Father: {fileID: 2128576161}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1802256977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1802256979}
+  - component: {fileID: 1802256978}
+  m_Layer: 0
+  m_Name: 662
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1802256978
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1802256977}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0a13b54ceccf28e4699d98e7163269c3, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &1802256979
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1802256977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2983131, y: 0.2650407, z: 4.6218195}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1808028054
 GameObject:
@@ -53308,7 +53425,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isClicked: 0
   manager: {fileID: 992682822}
-  waitTime: 17
+  waitTime: 7
+  music: {fileID: 1802256978}
 --- !u!4 &2015925655 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4530719762806124, guid: 4df3421f2c46e2842add8f7ba362d512,
@@ -55735,7 +55853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ab6da7e75e97a4293ae7cd005c8f2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: We All Become
+  title: "\u543E\u66F9\u7686\u5F80"
   music: {fileID: 1044808311}
   info: asdfdsfvgsdfg
   isClicked: 0
