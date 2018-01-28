@@ -9,6 +9,7 @@ public class Sleep : MonoBehaviour {
 	public GameObject blackT;
 	public GameObject cover;
 	public GameObject sleep;
+	public AudioSource music;
 	string word = "今天一天你做得很好。真理万岁！";
 	// Use this for initialization
 	void Start () {
@@ -31,11 +32,13 @@ public class Sleep : MonoBehaviour {
 
 	IEnumerator f()
 	{
+		music.Play();
 		for (int i = 0; i < word.Length; i++)
 		{
 			blackT.GetComponent<Text>().text = word.Substring(0, i + 1);
 			yield return new WaitForSeconds(0.2f);
 		}
+		music.Stop();
 		yield return new WaitForSeconds(1f);
 		SceneManager.LoadScene("01");
 	}

@@ -73,7 +73,6 @@ public class Manager : MonoBehaviour {
 	public void finishBook()
 	{
 		reader.SetActive(false);
-		print (22);
 	}
 
 	public void startDVD()
@@ -161,7 +160,6 @@ public class Manager : MonoBehaviour {
 		else if (Time.hour == 6)
 		{
 			finishBook();
-			print (111);
 			//transition.SetActive (true);
 			//yield return new WaitForSeconds (2f);
 			//transition.SetActive (false);

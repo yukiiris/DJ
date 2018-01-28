@@ -19,7 +19,6 @@ public class SilenceButton : MonoBehaviour {
 
 	private void OnMouseDown()
 	{
-		print(Broadcast.i);
 		music.Play();
 		start = Broadcast.i;
 	//	broadcast.isClicked = true;
