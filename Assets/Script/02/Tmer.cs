@@ -18,10 +18,10 @@ public class Tmer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (time == 0)
+		if (time == -1)
 		{
 			Time.hour++;
-			manager.check ();
+			StartCoroutine(manager.check());
 		}
 	}
 
