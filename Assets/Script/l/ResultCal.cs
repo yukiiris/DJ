@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AvatarConfirmer : MonoBehaviour {
-	public Manager manager;
+public class ResultCal : MonoBehaviour {
+	public int num = 0;
 	// Use this for initialization
 	void Start () {
 		
@@ -14,9 +14,8 @@ public class AvatarConfirmer : MonoBehaviour {
 		
 	}
 
-	private void OnMouseDown()
-	{
-		Time.hour++;
-		StartCoroutine(manager.check());
+	void OnMouseDown(){
+		print (num);
+
 	}
 }

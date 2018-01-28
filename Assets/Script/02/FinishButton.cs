@@ -18,6 +18,6 @@ public class FinishButton : MonoBehaviour {
 	private void OnMouseDown()
 	{
 		Time.hour++;
-		manager.check();
+		StartCoroutine(manager.check());
 	}
 }
