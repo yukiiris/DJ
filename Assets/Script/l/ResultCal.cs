@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ResultCal : MonoBehaviour {
+
+	private GameObject show;
 	public int num = 0;
 	// Use this for initialization
 	void Start () {
+
+		show = GameObject.FindGameObjectWithTag ("Player");
 		
 	}
 	
@@ -15,7 +19,7 @@ public class ResultCal : MonoBehaviour {
 	}
 
 	void OnMouseDown(){
-		print (num);
-
+		Credit.credit += num * 5;
+		show.GetComponent<ShowMoneyChange> ().ifchange = true;
 	}
 }
