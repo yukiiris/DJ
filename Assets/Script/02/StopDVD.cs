@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StopDVD : MonoBehaviour {
 	public Manager manager;
+	public AudioSource music;
 	// Use this for initialization
 	void Start () {
 		
@@ -16,6 +17,7 @@ public class StopDVD : MonoBehaviour {
 
 	private void OnMouseDown()
 	{
+		music.Play();
 		if (DVDPlayer.c == null)
 		{
 			return;
