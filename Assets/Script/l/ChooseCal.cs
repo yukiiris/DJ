@@ -6,6 +6,7 @@ public class ChooseCal : MonoBehaviour {
 	public GameObject manager;
 	private ChooseManager cm;
 	public GameObject rightChoice;
+	public GameObject normalChoice;
 	public GameObject thispage;
 	// Use this for initialization
 	void Start () {
@@ -22,8 +23,10 @@ public class ChooseCal : MonoBehaviour {
 
 		if (cm.choice != null) {
 			if (ifChooseRight () == 0) {
+				print (0);
+			} else if(ifChooseRight () == 1){
 				print (1);
-			} else {
+			}else if(ifChooseRight () == 2){
 				print (2);
 			}
 			thispage.SetActive (false);
@@ -34,7 +37,10 @@ public class ChooseCal : MonoBehaviour {
 	int ifChooseRight(){
 		if (cm.choice == rightChoice) {
 			return(0);
-		} else
+		} else if (cm.choice == normalChoice) {
 			return(1);
+		} else{
+			return(2);
+		}
 	}
 }
